@@ -1,6 +1,6 @@
 # Build intellead and deploy it to Docker
 
-![](./architecture.jpg)
+![](./resources/architecture.jpg)
 
 intellead microservices architecture
 
@@ -14,13 +14,20 @@ intellead microservices architecture
 - [qcnpj-crawler](https://github.com/intellead/qcnpj-crawler)
 - [intellead-classification](https://github.com/intellead/intellead-clasification)
 
-### Microservices
+### Integration Tests
 
 - [intellead-integration-tests](https://github.com/intellead/intellead-integration-tests)
 
 ### How to run intellead
 
-We need to have docker installed previously.
+We need to have git and docker installed previously.
+
+```
+$ bash < git clone https://github.com/intellead/intellead-getting-started.git
+$ bash < cd intellead-getting-started
+```
+
+Now we need to run the script that will get all intellead sources.
 
 ```
 $ bash < setup.sh

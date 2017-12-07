@@ -56,21 +56,27 @@ services:
      - postgres_classification
 
   intellead-security-postgresql:
-    build: databases/intellead-security-postgresql
+    build: 
+        context: databases
+        dockerfile: Dockerfile-postgres
     ports:
      - "4001:5432"
     networks:
      - postgres_security
 
   intellead-data-mongodb:
-    build: databases/intellead-data-mongodb
+    build: 
+        context: databases
+        dockerfile: Dockerfile-mongo
     ports:
      - "4002:27017"
     networks:
      - mongo_data
 
   intellead-classification-postgresql:
-    build: databases/intellead-classification-postgresql
+    build: 
+        context: databases
+        dockerfile: Dockerfile-postgres
     ports:
      - "4003:5432"
     networks:
