@@ -1,16 +1,11 @@
 @ECHO OFF
-
 IF EXIST bin (
-	goto :choice 
-) ELSE (
-	goto :end
+	:choice
+	set /P c=bin/ already exists. Do you wish to delete it and reinstall[Y/N]?
+	if /I "%c%" EQU "Y" goto :install
+	if /I "%c%" EQU "N" goto :end
+	goto :choice
 )
-
-:choice
-set /P c=bin/ already exists. Do you wish to delete it and reinstall[Y/N]?
-if /I "%c%" EQU "Y" goto :somewhere
-if /I "%c%" EQU "N" goto :end
-goto :choice
 
 :install
 mkdir bin
@@ -31,7 +26,4 @@ git clone https://github.com/intellead/intellead-integration-tests.git
 cd ..
 cp -R ../databases databases
 cp ../docker-compose/docker-compose.yml docker-compose.yml
-
 :end
-pause 
-exit
