@@ -1,5 +1,5 @@
 if [ -d "bin" ]; then
-	echo "bin/ already exists. Do you wish to delete it and reinstall?"
+	echo "bin/ already exists. Do you wish to delete it and reinstall[1/2]?"
 	select yn in "Yes" "No"; do
 	    case $yn in
 	        Yes ) rm -f -r bin; break;;
