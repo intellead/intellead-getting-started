@@ -1,0 +1,87 @@
+version: '3'
+
+services:
+
+  intellead-connector:
+    build: services/intellead-connector
+    ports:
+     - "3001:3000"
+    networks:
+     - web
+     - mongo_data
+
+  intellead-security:
+    build: services/intellead-security
+    ports:
+     - "3002:8080"
+    networks:
+     - web
+     - postgres_security
+
+  intellead-data:
+    build: services/intellead-data
+    ports:
+     - "3003:3000"
+    networks:
+     - web
+     - mongo_data
+
+  intellead-enrich:
+    build: services/intellead-enrich
+    ports:
+     - "3004:3000"
+    networks:
+     - web
+
+  receitaws-data:
+    build: services/receitaws-data
+    ports:
+     - "3005:3000"
+    networks:
+     - web
+
+  qcnpj-crawler:
+    build: services/qcnpj-crawler
+    ports:
+     - "3006:3000"
+    networks:
+     - web
+
+  intellead-classification:
+    build: services/intellead-classification
+    ports:
+     - "3007:5000"
+    networks:
+     - web
+     - postgres_classification
+
+  intellead-security-postgresql:
+    build: databases/intellead-security-postgresql
+    ports:
+     - "4001:5432"
+    networks:
+     - postgres_security
+
+  intellead-data-mongodb:
+    build: databases/intellead-data-mongodb
+    ports:
+     - "4002:27017"
+    networks:
+     - mongo_data
+
+  intellead-classification-postgresql:
+    build: databases/intellead-classification-postgresql
+    ports:
+     - "4003:5432"
+    networks:
+     - postgres_classification
+
+networks:
+  web:
+    driver: bridge
+  postgres_classification:
+    driver: bridge
+  mongo_data:
+    driver: bridge
+  postgres_security:
+    driver: bridge
