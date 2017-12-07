@@ -47,4 +47,4 @@ Then we call docker-compose and it starts all intellead microservices.
 
 ## Contributing
 
-See the -[CONTRIBUTING.md](./CONTRIBUTING.md) document for details.
+See the [CONTRIBUTING.md](./CONTRIBUTING.md) document for details.
