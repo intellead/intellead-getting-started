@@ -12,7 +12,7 @@ intellead microservices architecture
 - [intellead-enrich](https://github.com/intellead/intellead-enrich)
 - [receitaws-data](https://github.com/intellead/receitaws-data)
 - [qcnpj-crawler](https://github.com/intellead/qcnpj-crawler)
-- [intellead-classification](https://github.com/intellead/intellead-clasification)
+- [intellead-classification](https://github.com/intellead/intellead-classification)
 
 ### Integration Tests
 
