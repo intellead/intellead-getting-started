@@ -4,6 +4,8 @@
 
 intellead microservices architecture
 
+## Documentation
+
 ### Microservices
 
 - [intellead-connector](https://github.com/intellead/intellead-connector)
@@ -30,7 +32,8 @@ $ bash < cd intellead-getting-started
 Now we need to run the script that will get all intellead sources.
 
 ```
-$ bash < setup.sh
+(unix)      $ bash < setup.sh
+(windows)   $ bash < setup.bat
 ```
 
 This will basically clone every intellead repository in ./bin/ folder.
@@ -41,3 +44,7 @@ $ bash < docker-compose up --build
 ```
 
 Then we call docker-compose and it starts all intellead microservices.
+
+## Contributing
+
+See the -[CONTRIBUTING.md](./CONTRIBUTING.md) document for details.
