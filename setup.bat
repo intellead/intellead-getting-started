@@ -8,6 +8,7 @@ IF EXIST bin (
 )
 
 :install
+rd /s /q "bin"
 mkdir bin
 cd bin
 mkdir services
