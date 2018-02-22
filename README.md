@@ -15,6 +15,7 @@ intellead microservices architecture
 - [receitaws-data](https://github.com/intellead/receitaws-data)
 - [qcnpj-crawler](https://github.com/intellead/qcnpj-crawler)
 - [intellead-classification](https://github.com/intellead/intellead-classification)
+- [intellead-normalization](https://github.com/intellead/intellead-normalization)
 
 ### Integration Tests
 
