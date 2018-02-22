@@ -20,6 +20,7 @@ git clone https://github.com/intellead/intellead-enrich.git
 git clone https://github.com/intellead/receitaws-data.git
 git clone https://github.com/intellead/qcnpj-crawler.git
 git clone https://github.com/intellead/intellead-classification.git
+git clone https://github.com/intellead/intellead-normalization.git
 cd ..
 mkdir tests
 cd tests

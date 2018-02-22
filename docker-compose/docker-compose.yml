@@ -55,8 +55,15 @@ services:
      - web
      - postgres_classification
 
+  intellead-normalization:
+    build: services/intellead-normalization
+    ports:
+     - "3008:3000"
+    networks:
+     - web
+
   intellead-security-postgresql:
-    build: 
+    build:
         context: databases
         dockerfile: Dockerfile-postgres
     ports:
@@ -65,7 +72,7 @@ services:
      - postgres_security
 
   intellead-data-mongodb:
-    build: 
+    build:
         context: databases
         dockerfile: Dockerfile-mongo
     ports:
@@ -74,7 +81,7 @@ services:
      - mongo_data
 
   intellead-classification-postgresql:
-    build: 
+    build:
         context: databases
         dockerfile: Dockerfile-postgres
     ports:
