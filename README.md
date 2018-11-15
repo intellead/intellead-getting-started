@@ -17,6 +17,14 @@ intellead microservices architecture
 - [intellead-classification](https://github.com/intellead/intellead-classification)
 - [intellead-normalization](https://github.com/intellead/intellead-normalization)
 
+
+### Database mapping
+
+![](./resources/database-mapping.png)
+
+intellead database mapping
+
+
 ### Integration Tests
 
 - [intellead-integration-tests](https://github.com/intellead/intellead-integration-tests)
